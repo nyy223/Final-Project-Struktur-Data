@@ -116,10 +116,9 @@ public:
 };
 
 // Transaksi class
-// Transaksi class
 class Transaksi {
 private:
-    string tanggal;  // Change to string for user-friendly date input
+    string tanggal;  
     int nominal;
     string tipe;
     string kategoriTransaksi;
@@ -201,7 +200,6 @@ public:
 };
 
 // Pemasukan class
-// Pemasukan class
 class Pemasukan : public Laporan {
 private:
     string sumberPemasukan;
@@ -219,10 +217,6 @@ public:
 
     void viewLaporan() override {
         cout << "Pemasukan - Bulan: " << bulan << ", Tanggal: " << tanggal << ", Nominal: " << nominal << ", Sumber: " << sumberPemasukan << ", Tipe: " << tipe << endl;
-    }
-
-    void createLaporan() override {
-        // Implement create laporan logic
     }
 
     void setSumberPemasukan(string sumberPemasukan) {
@@ -256,10 +250,6 @@ public:
 
     void viewLaporan() override {
         cout << "Pengeluaran - Bulan: " << bulan << ", Tanggal: " << tanggal << ", Nominal: " << nominal << ", Alokasi: " << alokasiPengeluaran << ", Tipe: " << tipe << endl;
-    }
-
-    void createLaporan() override {
-        // Implement create laporan logic
     }
 
     void setAlokasiPengeluaran(string alokasiPengeluaran) {
@@ -425,7 +415,6 @@ public:
     }
 };
 
-// main function
 // main function
 int main() {
     string username, password, email;
