@@ -172,7 +172,6 @@ public:
 
     virtual string tampilJenisLaporan() = 0;
     virtual void viewLaporan() = 0;
-    virtual void createLaporan() = 0;
 
     void setBulan(string bulan) {
         this->bulan = bulan;
